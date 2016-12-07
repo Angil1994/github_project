@@ -1,0 +1,21 @@
+{
+  "name": "project_2",
+  "version": "1.0.0",
+  "description": "项目二",
+  "main": "app.js",
+  "scripts": {
+    "test": "测试"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://code.aliyun.com/task2016/project_2.git"
+  },
+  "keywords": [
+    "关键词"
+  ],
+  "author": "陈浩庭",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
