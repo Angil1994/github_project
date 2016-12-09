@@ -1,0 +1,28 @@
+@media all and (min-width: 800px) {
+  body {
+    background: #ccc;
+  }
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  body {
+    background: #4fb3ba;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background: #5cdb7b;
+  }
+}
+.md {
+  width: 90px;
+  height: 80px;
+  border: 1px solid #b737c6;
+}
+.md:after {
+  content: "after";
+}
+.dom {
+  width: 200px;
+  height: 200px;
+  border: #b2963f 1px solid;
+}
