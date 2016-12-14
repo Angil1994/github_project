@@ -1,0 +1,123 @@
+body {
+  background: #efeff4;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+ul li,
+li li {
+  padding: 25px 0;
+}
+.header {
+  font-size: 20px;
+  text-align: center;
+  background: #fff;
+  color: #ea5404;
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+  line-height: 20px;
+  padding: 3% 3%;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header img {
+  width: 18px;
+}
+.header span {
+  float: left;
+}
+.interval {
+  padding: 2%;
+  font-size: 10px;
+  color: #ccc;
+}
+section {
+  background: #fff;
+  border-top: 1px solid #d6d7dc;
+  border-bottom: 1px solid #d6d7dc;
+  color: #333;
+  padding: 10px 12px;
+}
+section .add_portrait_box {
+  display: flex;
+  justify-content: center;
+}
+section .add_portrait_box .add_portrait {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: #878787;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+}
+section .add_portrait_box .add_portrait input {
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  outline-color: #878787;
+  opacity: 0;
+}
+section .input {
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+}
+section .input input {
+  width: 66%;
+  padding: 0 8px;
+  height: 30px;
+  background: #efeff4;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  outline: none;
+}
+section .white_space {
+  height: 5px;
+}
+section .line_box {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+section .line_box .line_half {
+  width: 50%;
+  height: 1px;
+  border-top: 1px Solid #d6d7dc;
+}
+.others {
+  display: flex;
+  justify-content: center;
+}
+.others .others_content {
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  background: #878787;
+  font-size: 12px;
+  width: 100px;
+  height: 64px;
+  line-height: 64px;
+}
+.others #card {
+  margin-top: 10px;
+}
+.btn_login {
+  width: 94%;
+  position: relative;
+  left: 12px;
+  right: 12px;
+  margin-top: 40px;
+  height: 44px;
+  font-size: 18px;
+  color: #fff;
+  background: #ea5404;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+}

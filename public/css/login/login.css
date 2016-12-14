@@ -1,0 +1,71 @@
+body {
+  background: #efeff4;
+  margin: 0;
+}
+.header {
+  font-size: 20px;
+  text-align: center;
+  background: #fff;
+  color: #ea5404;
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+  line-height: 20px;
+  padding: 3% 3%;
+  border-bottom: 1px solid #d6d7dc;
+}
+.header img {
+  width: 18px;
+}
+.header span {
+  float: left;
+}
+section {
+  margin-top: 6%;
+  background: #fff;
+  font-size: 18px;
+  padding: 0 12px;
+  border-top: 1px solid #d6d7dc;
+  border-bottom: 1px solid #d6d7dc;
+  color: #333;
+}
+section div {
+  height: 50px;
+  line-height: 50px;
+}
+section div img {
+  width: 20px;
+  margin-bottom: -2px;
+}
+section div input {
+  height: 30px;
+  border: 0;
+  outline: none;
+}
+section .line {
+  height: 1px;
+  border-top: 1px Solid #d6d7dc;
+}
+.btn_login {
+  width: 94%;
+  position: relative;
+  left: 12px;
+  right: 12px;
+  margin-top: 40px;
+  height: 44px;
+  font-size: 18px;
+  color: #fff;
+  background: #c7c7c7;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+}
+.register_and_forget {
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.register_and_forget .register {
+  color: #ff8a00;
+}
+.register_and_forget .forget {
+  color: #646464;
+}

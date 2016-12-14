@@ -1,0 +1,29 @@
+neat.js 很方便的一个插件
+1 一些标签 header
+	section
+	article
+2 flex 1 css3属性 对div进行平均分 flex 2 flex 3 等分box 2和3
+	2.2 text-indent 10px
+3 outline 去掉输入框里面的阴影
+4 地址栏访问login文件夹下的login.html  http://127.0.0.1:9999/login/login.html
+5 @import"body 样式 div 样式 " 在styl和css里面写在最前面 表示里面的body和div等继承样式
+6 em 和 rem  em找当前的font-size 而 rem找根font-size
+7 上传图片的input file框样式要改时 在外面套个div 给这个div写样式 把input透明度设为0
+8	消息 通知 需求 并列按钮的线
+&:after
+	content ''
+	display block
+	position absolute
+	top 0
+	right 0
+	width 1px
+	height 30px
+	background-color #
+&:last-child:after
+	content ''
+	display none
+9 em 标签告诉浏览器把其中的文本表示为强调的内容。font-style normal 斜体去掉
+10 控制div里面的div水平居中 不需要设置margin padding值
+	display flex
+	justify-content center
+11 发送验证模拟 见 forget.html 里面的 function submitHandler

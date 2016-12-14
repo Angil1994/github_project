@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XXX-XXX</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,
+		maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="../public/css/login/operator.css">
+</head>
+<body>
+	<header class="header">
+		<span onclick="backToLogin()"><img src="../public/img/login/nav_back_icon@2x.png" alt=""></span>
+		运营商
+	</header>
+	<div class="interval">必填项</div>
+	<section>
+		<div class="add_portrait_box">
+			<div class="add_portrait">
+				添加头像
+				<input type="file" accept="image/*">
+			</div>
+		</div>
+		<div class="line_box">
+			<div class="line_half"></div>
+		</div>
+		<div class="input">
+			<input type="text" placeholder="公司名">
+		</div>
+		<div class="white_space"></div>
+		<div class="input">
+			<input type="password" placeholder="企业邮箱/公司总机">
+		</div>
+		<div class="white_space"></div>
+		<div class="input">
+			<input type="password" placeholder="联系人">
+		</div>
+		<div class="white_space"></div>
+		<div class="input">
+			<input type="password" placeholder="联系方式">
+		</div>
+	</section>
+	<div class="interval">选填项</div>
+	<section>
+		<div class="input">
+			<input type="password" placeholder="微信号码">
+		</div>
+		<ul class="others">
+			<li class="others_content">微信二维码</li>
+			<li class="others_interval"></li>
+			<li class="others_content">营业执照</li>
+			<li class="others_interval"></li>
+			<li class="others_content">运营/租赁协议</li>
+		</ul>
+	</section>
+	<button class="btn_login">
+		完成
+	</button>
+</body>
+<script>
+function backToLogin(){
+	location.href="register.html"
+}
+
+</script>
+</html>

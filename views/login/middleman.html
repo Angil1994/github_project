@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XXX-XXX</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,
+		maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="../public/css/login/middleman.css">
+</head>
+<body>
+	<header class="header">
+		<span onclick="backToLogin()"><img src="../public/img/login/nav_back_icon@2x.png" alt=""></span>
+		经纪人
+	</header>
+	<div class="interval">必填项</div>
+	<section>
+		<div class="add_portrait_box">
+			<div class="add_portrait">
+				添加头像
+				<input type="file" accept="image/*">
+			</div>
+		</div>
+		<div class="line_box">
+			<div class="line_half"></div>
+		</div>
+		<div class="input">
+			<input type="text" placeholder="姓名">
+		</div>
+		<div class="white_space"></div>
+		<div class="input">
+			<input type="password" placeholder="所属公司">
+		</div>
+		<div class="white_space"></div>
+		<div class="input">
+			<input type="password" placeholder="联系方式">
+		</div>
+		<div class="white_space"></div>
+		<div class="input">
+			<input type="password" placeholder="擅长商圈">
+		</div>
+		<div class="others">
+			<div class="others_content" id="card">名片正面</div>
+		</div>
+	</section>
+	<div class="interval">选填项</div>
+	<section>
+	<div class="others">
+		<div class="others_content">全国经济人证书</div>
+	</div>
+	</section>
+	<button class="btn_login">
+		完成
+	</button>
+</body>
+<script>
+function backToLogin(){
+	location.href="register.html"
+}
+
+</script>
+</html>

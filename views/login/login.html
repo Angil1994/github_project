@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,
+		maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="../public/css/login/login.css">
+</head>
+<body>
+	<header class="header">
+		<span><img src="../public/img/login/nav_back_icon@2x.png" alt=""></span>
+		登录
+	</header>
+	<section>
+		<div>
+			<img src="../public/img/login/content_ID_icon@2x.png">
+			账号:<input type="text" id="ID" placeholder="请输入手机号码">
+		</div>
+		<div class="line"></div>
+		<div>
+			<img src="../public/img/login/content_password_icon@2x.png">
+			密码:<input type="password" placeholder="请输入您的账号密码">
+		</div>
+	</section>
+	<button class="btn_login">
+		登录
+	</button>
+	<div class="register_and_forget">
+		<span class="register" onclick="hrefToRegister()">注册</span>
+		<span class="forget" onclick="hrefToForget()">忘记密码？</span>
+	</div>
+</body>
+<script>
+function hrefToForget(){
+	location.href="forget.html"
+}
+function hrefToRegister(){
+	location.href="register.html"
+}
+
+</script>
+</html>
