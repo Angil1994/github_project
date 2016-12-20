@@ -33,8 +33,8 @@ app.use('/public',express.static(publicPath));
 
 
 //监听端口 9999，用来启动
-app.listen(9999,function(){
-	console.log('server run at port 9999');
+app.listen(16928,function(){
+	console.log('server run at port 16928');
 });
 
 //模块导出

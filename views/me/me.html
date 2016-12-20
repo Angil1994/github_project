@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,
+		maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="../../public/css/me/me.css">
+</head>
+<body>
+	<header class="header">
+		<span>上海<img src="../../public/img/homepage/nav_icon_down@2x.png" alt=""></span>
+		安居源
+	</header>
+
+	<div class="news_interval"></div>
+	<footer class="bottom_nav">
+		<div class="bottom_icon" id="bottom_home_cell" onclick="hrefToHome()">
+			<img src="../../public/img/information/bottom_press_icon04@2x.png" alt="">
+			<p class="active">首页</p>
+		</div>
+		<div class="bottom_icon" id="bottom_news_cell" onclick="hrefToAppointment()">
+			<img src="../../public/img/information/bottom_nor_icon03@2x.png" alt="">
+			<p>预约</p>
+		</div>
+		<div class="bottom_icon" id="bottom_add_cell" >
+			<img id="more" src="../../public/img/information/bottom_icon05@2x.png" alt="">
+		</div>
+		<div class="bottom_icon" id="bottom_appointment_cell" onclick="hrefToNews()">
+			<img src="../../public/img/information/bottom_nor_icon02@2x.png" alt="">
+			<p>信息</p>
+		</div>
+		<div class="bottom_icon" id="bottom_me_cell" onclick="hrefToMe()">
+			<img src="../../public/img/information/bottom_nor_icon01@2x.png" alt="">
+			<p>我</p>
+		</div>
+	</footer>
+</body>
+<script>
+function hrefToHome(){location.href="../homepage/home.html"}
+function hrefToAppointment(){location.href="../appointment/appointment.html"}
+function hrefToNews(){location.href="../information/news.html"}
+function hrefToMe(){location.href="../me/me.html"}
+</script>
+</html>
