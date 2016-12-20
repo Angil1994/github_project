@@ -67,7 +67,7 @@
 		<ul class="regions" id="regions_towns">
 			<li>全部</li>
 			<li>闵行</li>
-			<li>浦东</li>
+			<li id="area_pudong">浦东</li>
 			<li>嘉定</li>
 			<li>宝山</li>
 			<li>闸北</li>
@@ -201,7 +201,7 @@ function other_choice(){
 
 $(document).ready(function(){
 	$("#menu_region").on("tap",function(){
-		$(".regions_box").toggle();
+		$(".regions_hidden_box").toggle();
 		if($(this ).hasClass("menu_active")){
 			$(this ).removeClass("menu_active");
 			$(this ).children(".down2" ).addClass("down_active");
@@ -212,12 +212,11 @@ $(document).ready(function(){
 			$(this ).children(".down2").removeClass("down_active");
 		}
 	});
-	$("ul#regions_towns li" ).on("tap",function(){
-	if($("ul#regions_details p").css("display")=="none" ){
+
+	$("#area_pudong" ).on("tap",function(){
+
 		$("ul#regions_details p" ).css("display","block");
-	}else{
-		$("ul#regions_details p" ).css("display","none");
-	}
+
 	})
 });
 
