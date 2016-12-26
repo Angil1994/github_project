@@ -9,3 +9,9 @@ function hrefToDemand(){location.href="../information/demand.html"}
 function hrefToLogin(){location.href="../login/login.html"}
 
 function hrefToLoginSuccess(){location.href="../login/loginSuccess.html"}
+
+function hrefToMe_not_login(){location.href="../me/me_not_login.html"}
+
+function hrefToInfo_detail(){location.href="../info/info_detail.html"}
+
+function hrefToPrev(){location.href="../me/me.html"}

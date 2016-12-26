@@ -1,0 +1,107 @@
+body
+  background #efeff4
+  margin 0
+  font-family "Arial","Microsoft YaHei","黑体","宋体",sans-serif
+.header
+  font-size 20px
+  text-align center
+  background #fff
+  color #323232
+  line-height 20px
+  padding 3% 3%
+  border-bottom 1px solid #d6d7dc
+  margin-bottom 10px
+  img
+    padding 14px 12px
+    width 16px
+    position absolute
+    right 0
+    top 0
+
+
+
+.building_info_box
+  padding 12px
+  font-size 12px
+  color #646464
+  background #fff
+  .building_info
+    display flex
+    .building_banner
+      flex 2
+      border-radius 4px
+      img
+        width 100px
+        height 70px
+    .building_text
+      flex 4
+      .building_text_box
+        display flex
+        justify-content: space-between;
+        span:nth-of-type(2)
+          color #b4b4b4
+          img
+            width 12px
+            margin-right 6px
+
+      p:nth-of-type(1)
+        margin 2px 0
+        font-size 14px
+        line-height 16px
+      p:nth-of-type(2)
+        line-height 16px
+        margin 2px 0
+        color #ff8a00
+  .orders
+    height 1.8em
+    width 100%
+    button
+      background #ea5404
+      border 0
+      color #fff
+      float right
+      width 4em
+      height 1.6em
+      border-radius 4px
+
+.new_interval
+  padding 7.5% 0
+footer.bottom_nav
+  width 100%
+  background white
+  padding 2% 0
+  border-top 1px solid #d6d7dc
+  position fixed
+  bottom 0
+  display flex
+  div.bottom_icon
+    flex 1
+    text-align center
+    img
+      width 21px
+    img#add
+      width 42px
+  div.bottom_icon#bottom_add_cell
+      position relative
+    #other_choice
+      width 200%
+      height 3em
+      text-align center
+      line-height 3em
+      position absolute
+      top -3em
+      left -50%
+      background #c5c5c5
+      color #666666
+      font-size 12px
+      display none
+      span
+        flex 1
+    p
+      margin 0
+      font-size 12px
+      line-height 12px
+      color #b4b4b4
+    p.active
+      color #ea5404
+

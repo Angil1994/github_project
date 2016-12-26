@@ -1,3 +1,6 @@
+*
+  margin 0
+  padding 0
 body
   background #efeff4
   margin 0
@@ -16,6 +19,107 @@ body
     position absolute
     right 0
     top 0
+
+.person_info
+  text-align left
+  border-bottom 1px solid #d6d7dc
+  height 96px
+  line-height 96px
+  margin-top 10px
+  background #ffffff
+  font-size 14px
+  display flex
+  div:nth-of-type(1)
+    flex 1
+  div:nth-of-type(2)
+    flex 6
+  div:nth-of-type(3)
+    flex 1
+  .head_image
+    width 64px
+    height 64px
+    padding 12px
+    position relative
+  .person_data
+    padding 26px 0
+    h4
+      line-height 16px
+      color #323232
+      font-weight normal
+      display block
+      height 24px
+      font-size 14px
+    p
+      line-height 16px
+      color #646464
+      height 24px
+      font-size 12px
+      img
+        position relative
+        top 2px
+        width 11px
+        height 12px
+  img#login_user_head
+    width 64px
+  input
+    width 64px
+    height 64px
+    border-radius 50%
+    position absolute
+    top 12px
+    left 12px
+    opacity 0
+
+  a
+    float left
+    text-decoration none
+    color #323232
+  img#login_right_icon
+    width 10px
+    float right
+    padding 39px 12px
+
+.save_info
+  line-height 30px
+  display flex
+  background #fff
+  padding 7px
+  margin-bottom 10px
+  border-bottom 1px solid #d6d7dc
+  div
+    flex 1
+    text-align center
+    color #646464
+    span
+      color #646464
+      font-size 12px
+    span:before
+      content '0'
+      font-size 16px
+      font-weight bold
+      font-style normal
+      position relative
+      top 2px
+      left -5px
+  .collection
+    border-right 1px solid #d6d7dc
+
+.content_list
+  padding 12px
+  background #fff
+  font-size 0.9em
+  color #323232
+  margin-bottom 10px
+  border-bottom 1px solid #d6d7dc
+  img:nth-child(1)
+    width 20px
+    padding 2px
+    position relative
+    top 4px
+  img:nth-child(3)
+    width 8px
+    float right
+    margin-top 7px
 
 
 footer.bottom_nav

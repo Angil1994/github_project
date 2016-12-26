@@ -12,7 +12,7 @@ var reload = browserSync.reload;
 gulp.task('nodemon',function(ab){
 	var ft =false;
 	return nodemon ({
-		script:'./app.js'
+		script:'./server.js'
 	} ).on('start',function(){
 		if(!ft){
 			ab();
@@ -62,8 +62,8 @@ gulp.task('uglify',function(){
 });
 
 gulp.task('watcher',['browserSync','stylus','uglify'],function(){
-	gulp.watch("./stylus/**/*.styl",['stylus'])
-	gulp.watch("./public/js/**/*.js",['uglify'])
+	gulp.watch("./stylus/**/*.styl",['stylus']);
+	gulp.watch("./public/js/**/*.js",['uglify']);
 	gulp.watch(["./public/css/**/*.css",
 		"./public/minjs/**/*.js"] ).on('change',function(){
 			reload();
