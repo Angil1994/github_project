@@ -102,3 +102,5 @@ neat.js 很方便的一个插件
    # github_project
 
 17 h1~6标签是有 line-height 行高的
+
+18jq获取元素的款

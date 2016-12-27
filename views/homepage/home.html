@@ -26,17 +26,16 @@
 			</div>
 		</div>
 		<ul class="circle_box">
-			<li class="btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
-			<li class="btn"><img src="../../public/img/homepage/banner_icon_point_press@2x.png" alt=""></li>
-			<li class="btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
-			<li class="btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
+			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
+			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_press@2x.png" alt=""></li>
+			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
+			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
 		</ul>
-
 		<ul class="carousel" id="carousel">
 			<li class="carousel-li"><img src="../../public/img/homepage/banner_img@2x.png" alt="1"></li>
-			<li class="carousel-li"><img src="../../public/img/homepage/banner_img@2x.png" alt="2"></li>
-			<li class="carousel-li"><img src="../../public/img/homepage/banner_img@2x.png" alt="3"></li>
-			<li class="carousel-li"><img src="../../public/img/homepage/banner_img@2x.png" alt="4"></li>
+			<li class="carousel-li"><img src="../../public/img/homepage/banner_img_2@2x.png" alt="2"></li>
+			<li class="carousel-li"><img src="../../public/img/homepage/banner_img_3@2x.png" alt="3"></li>
+			<li class="carousel-li"><img src="../../public/img/homepage/banner_img_4@2x.png" alt="4"></li>
 		</ul>
 
 	</header>
@@ -176,9 +175,10 @@
 		</div>
 	</footer>
 </body>
+<script src="//cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
 <script src="../../public/js/hypertext_reference.js"></script>
-<!--<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>-->
-<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+
+<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 <script src="../../public/minjs/zepto/touch.js"></script>
 
 <script>
@@ -202,8 +202,8 @@ function other_choice(){
 }
 
 $(document).ready(function(){
-	$("#menu_region").on("tap",function(){
-		$(".regions_hidden_box").toggle();
+	$("#menu_region").on("click",function(){
+		$(".regions_hidden_box").slideToggle();
 		if($(this ).hasClass("menu_active")){
 			$(this ).removeClass("menu_active");
 			$(this ).children(".down2" ).addClass("down_active");
@@ -215,11 +215,28 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#area_pudong" ).on("tap",function(){
+	$("#area_pudong" ).on("click",function(){
 		$("ul#regions_details p" ).css("display","block");
 	});
-	$()
+
 });
+
+
+	function tonext(){
+		$(".carousel").animate({
+			"margin-left": -$(window ).outerWidth()
+		}, 1000,function(){
+			$(".carousel li").first().appendTo($(".carousel"));
+			$(".carousel").css("margin-left", 0);
+		});
+	}
+		setInterval(tonext,2000);
+
+/*	if(i >= $(".carousel li").length){
+		i = 0;
+	}*/
+	$(".carousel li").removeClass("active");
+	$(".carousel li").eq(i).addClass("active");
 
 
 </script>
