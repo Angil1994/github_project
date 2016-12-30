@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>安居源-南京鸿鸣网络科技有限公司</title>
+	<meta name="keywords" content="南京鸿鸣网络科技有限公司">
+	<meta name="description" content="南京鸿鸣网络科技有限公司务涉及网站开发，手机APP开发，以及游戏开发运营等，
+	秉承“助力职场，成就梦想”的理念，致力于中国移动互联网研发人才一体化服务，全力打造移动互联网高端研发人才服务平台。
+	 集团目前拥有100多项专利产品，50多个APP项目，500家合作企业。">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="../../public/css/info/info_detail.css">
+</head>
+<body>
+	<header class="header">
+		<i class="icon-back"></i>
+		<span class="header_title">个人资料</span>
+	</header>
+
+	<div class="info_box">
+		<div class="info_img"></div>
+		<div class="info_name">XXXXX</div>
+		<div class="info_desc">XXXXXXXXXXXXXXXXXXXXXX</div>
+		<div class="info_edit">编辑个人资料</div>
+	</div>
+
+	<div class="info-cells">
+		<div class="info-cell">
+			<span class="info-name">企业邮箱/公司总机</span>
+			<span class="info-content">54645646546@qq.com</span>
+		</div>
+		<div class="info-cell">
+			<span class="info-name">联系人</span>
+			<span class="info-content">54645646546@qq.com</span>
+		</div>
+		<div class="info-cell">
+			<span class="info-name">联系方式</span>
+			<span class="info-content">54645646546@qq.com</span>
+		</div>
+		<div class="info-cell">
+			<span class="info-name">微信号码</span>
+			<span class="info-content">54645646546@qq.com</span>
+		</div>
+		<div class="image-cell">
+			<div class="image-block">
+				<img src="" alt="">
+				<p class="title"></p>
+			</div>
+			<div class="image-block">
+				<img src="" alt="">
+				<p class="title"></p>
+			</div>
+			<div class="image-block">
+				<img src="" alt="">
+				<p class="title"></p>
+			</div>
+		</div>
+
+		<input id="uploadImg" type="file">
+		<button id="uploadBtn">上传图片</button>
+		<button id="backToPrev" onclick="hrefToPrev()">返回</button>
+
+
+	</div>
+</body>
+<script src="../../public/js/hypertext_reference.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script>
+(function($){
+	$("#uploadBtn").on("click", function(){
+		console.log('uploadBtn click');
+		var files = $("#uploadImg")[0].files;
+		console.log(files);
+		var file = files[0];
+
+		var formData = new FormData();
+		formData.append("imgData", file);
+
+		$.ajax({
+			url: "/api/img/upload/",
+			type: "post",
+			dataType: "json",
+			data: formData,
+			cache: false,
+			contentType: false,
+			processData: false,
+			success: function(result){
+				console.log(result);
+			}
+		})
+	})
+}(jQuery))
+</script>
+</html>

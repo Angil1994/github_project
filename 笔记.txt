@@ -102,3 +102,9 @@ neat.js 很方便的一个插件
    # github_project
 
 17 h1~6标签是有 line-height 行高的
+
+18jq获取屏幕的宽度   $(window ).outerWidth()
+
+19 http码 2xx 请求成功 304 从缓存中获取
+4xx客户端错误 401需要身份验证 403身份验证失败，拒绝访问 405请求参数错误
+5xx服务端错误

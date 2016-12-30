@@ -1,4 +1,5 @@
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>安居源-南京鸿鸣网络科技有限公司</title>
@@ -8,27 +9,18 @@
 	 集团目前拥有100多项专利产品，50多个APP项目，500家合作企业。">
 	<meta name="viewport" content="width=device-width,initial-scale=1,
 		maximum-scale=1,minimum-scale=1,user-scalable=no">
-	<link rel="stylesheet" href="../../public/css/me/me.css">
+	<link rel="stylesheet" href="../../public/css/me/me_not_login.css">
 </head>
 <body>
 	<header class="header">
 		我 <img src="../../public/img/me/nav_set_icon@2x.png" alt="">
 	</header>
 
-	<div class="person_info" onclick="hrefToInfo_detail()">
-		<div class="head_image">
-			<input type="file">
-			<img id="login_user_head"  src="../../public/img/me/log in_user-head@2x.png" alt="">
-		</div>
-		<div class="person_data">
-			<h4>呱呱呱叫</h4>
-			<p>修改资料<img src="../../public/img/me/log-in_edit_icon@2x.png" alt=""></p>
-		</div>
-		<div class="login_right">
-			<img id="login_right_icon" src="../../public/img/me/log in_right_icon@2x.png" alt="">
-		</div>
+	<div class="login">
+		<img id="login_user_head"  src="../../public/img/me/log in_user-head@2x.png" alt="">
+		<a href="">点击登录/注册</a>
+		<img id="login_right_icon" src="../../public/img/me/log in_right_icon@2x.png" alt="">
 	</div>
-
 	<div class="save_info">
 		<div class="collection"><span>收藏</span></div>
 		<div class="integration"><span>积分</span></div>
@@ -67,8 +59,8 @@
 	<div class="news_interval"></div>
 	<footer class="bottom_nav">
 		<div class="bottom_icon" id="bottom_home_cell" onclick="hrefToHome()">
-			<img src="../../public/img/information/bottom_nor_icon04@2x.png" alt="">
-			<p >首页</p>
+			<img src="../../public/img/information/bottom_press_icon04@2x.png" alt="">
+			<p class="active">首页</p>
 		</div>
 		<div class="bottom_icon" id="bottom_news_cell" onclick="hrefToAppointment()">
 			<img src="../../public/img/information/bottom_nor_icon03@2x.png" alt="">
@@ -82,11 +74,10 @@
 			<p>信息</p>
 		</div>
 		<div class="bottom_icon" id="bottom_me_cell" onclick="hrefToMe()">
-			<img src="../../public/img/information/bottom_press_icon01@2x.png" alt="">
-			<p class="active">我</p>
+			<img src="../../public/img/information/bottom_nor_icon01@2x.png" alt="">
+			<p>我</p>
 		</div>
 	</footer>
-
 </body>
 <script src="../../public/js/hypertext_reference.js"></script>
 </html>
