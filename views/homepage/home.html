@@ -25,11 +25,12 @@
 				<input type="search" placeholder="挑好房，上安居源">
 			</div>
 		</div>
+		<!--轮播图开始-->
 		<ul class="circle_box">
-			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
-			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_press@2x.png" alt=""></li>
-			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
-			<li class="circle_btn"><img src="../../public/img/homepage/banner_icon_point_nor@2x.png" alt=""></li>
+			<li class="circle_btn active"></li>
+			<li class="circle_btn"></li>
+			<li class="circle_btn"></li>
+			<li class="circle_btn"></li>
 		</ul>
 		<ul class="carousel" id="carousel">
 			<li class="carousel-li"><img src="../../public/img/homepage/banner_img@2x.png" alt="1"></li>
@@ -37,7 +38,7 @@
 			<li class="carousel-li"><img src="../../public/img/homepage/banner_img_3@2x.png" alt="3"></li>
 			<li class="carousel-li"><img src="../../public/img/homepage/banner_img_4@2x.png" alt="4"></li>
 		</ul>
-
+		<!--轮播图结束-->
 	</header>
 
 	<nav class="menus">
@@ -67,23 +68,81 @@
 	</nav>
 	<div class="regions_hidden_box">
 		<ul class="regions" id="regions_towns">
-			<li>全部</li>
-			<li>闵行</li>
-			<li id="area_pudong">浦东</li>
-			<li>嘉定</li>
-			<li>宝山</li>
-			<li>闸北</li>
-			<li>松江</li>
-			<li>徐汇</li>
-			<li>普陀</li>
+			<li class="reg act">全部</li>
+			<li class="reg">闵行</li>
+			<li class="reg" id="area_pudong">浦东</li>
+			<li class="reg">嘉定</li>
+			<li class="reg">宝山</li>
+			<li class="reg">闸北</li>
+			<li class="reg">松江</li>
+			<li class="reg">徐汇</li>
+			<li class="reg">普陀</li>
 		</ul>
-		<ul class="regions" id="regions_details">
-			<li><p>全部</p></li>
-			<li><p>八佰伴</p></li>
-			<li><p>川沙</p></li>
-			<li><p>花木</p></li>
-			<li><p>金桥</p></li>
-		</ul>
+		<div class="regions" id="regions_details">
+			<div class="reg"><ul class="hide">
+					<li><p>全部</p></li>
+					<li><p>八佰伴</p></li>
+					<li><p>川沙</p></li>
+					<li><p>花木</p></li>
+					<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>111</p></li>
+				<li><p>八伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>222</p></li>
+				<li><p>八佰伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>333</p></li>
+				<li><p>八佰伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>444</p></li>
+				<li><p>八佰伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>555</p></li>
+				<li><p>八佰伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>666</p></li>
+				<li><p>八佰伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>777</p></li>
+				<li><p>八佰伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+			<div class="reg"><ul class="hide">
+				<li><p>888</p></li>
+				<li><p>八佰伴</p></li>
+				<li><p>川沙</p></li>
+				<li><p>花木</p></li>
+				<li><p>金桥</p></li>
+			</ul></div>
+		</div>
 	</div>
 
 	<section class="details">
@@ -95,7 +154,7 @@
 			<span class="detail_like" onclick="liked(this)"></span>
 			<p class="detail_address">浦东-八佰伴</p>
 			<button class="detail_btn">商务中心</button>
-			<p class="detail_data"><i>&yen;4</i>元/平米/天起</p>
+			<p class="detail_data"><i>&yen;7</i>元/平米/天起</p>
 			<span class="detail_data_Commission">佣金：1个月</span>
 		</div>
 	</section>
@@ -108,7 +167,7 @@
 			<span class="detail_like" onclick="liked(this)"></span>
 			<p class="detail_address">浦东-八佰伴</p>
 			<button class="detail_btn">商务中心</button>
-			<p class="detail_data"><i>&yen;4</i>元/平米/天起</p>
+			<p class="detail_data"><i>&yen;6</i>元/平米/天起</p>
 			<span class="detail_data_Commission">佣金：1个月</span>
 		</div>
 	</section>
@@ -121,7 +180,7 @@
 			<span class="detail_like" onclick="liked(this)"></span>
 			<p class="detail_address">浦东-八佰伴</p>
 			<button class="detail_btn">商务中心</button>
-			<p class="detail_data"><i>&yen;4</i>元/平米/天起</p>
+			<p class="detail_data"><i>&yen;5</i>元/平米/天起</p>
 			<span class="detail_data_Commission">佣金：1个月</span>
 		</div>
 	</section>
@@ -177,67 +236,8 @@
 </body>
 <script src="//cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
 <script src="../../public/js/hypertext_reference.js"></script>
-
 <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 <script src="../../public/minjs/zepto/touch.js"></script>
 
-<script>
-function liked(obj){
-	var img=obj.style.backgroundImage;
-	if(img== 'url("../../public/img/homepage/collect_icon_press@2x.png")'){
-		obj.style.backgroundImage="url('../../public/img/homepage/collect_icon_nor@2x.png')"
-	}
-	else{
-		obj.style.backgroundImage= "url('../../public/img/homepage/collect_icon_press@2x.png')";
-	}
-}
-var offLogin=document.getElementById("other_choice");
-function other_choice(){
-	var off=offLogin.style.display;
-	if(off=="none"||off==""){
-		offLogin.style.display = "flex"
-	}else{
-		offLogin.style.display = "none"
-	}
-}
-
-$(document).ready(function(){
-	$("#menu_region").on("click",function(){
-		$(".regions_hidden_box").slideToggle();
-		if($(this ).hasClass("menu_active")){
-			$(this ).removeClass("menu_active");
-			$(this ).children(".down2" ).addClass("down_active");
-			$(this ).children(".down").removeClass("down_active");
-		}else{
-			$(this ).addClass("menu_active");
-			$(this ).children(".down" ).addClass("down_active");
-			$(this ).children(".down2").removeClass("down_active");
-		}
-	});
-
-	$("#area_pudong" ).on("click",function(){
-		$("ul#regions_details p" ).css("display","block");
-	});
-
-});
-
-
-	function tonext(){
-		$(".carousel").animate({
-			"margin-left": -$(window ).outerWidth()
-		}, 1000,function(){
-			$(".carousel li").first().appendTo($(".carousel"));
-			$(".carousel").css("margin-left", 0);
-		});
-	}
-		setInterval(tonext,2000);
-
-/*	if(i >= $(".carousel li").length){
-		i = 0;
-	}*/
-	$(".carousel li").removeClass("active");
-	$(".carousel li").eq(i).addClass("active");
-
-
-</script>
+<script src="../../public/js/homepage/home.js"></script>
 </html>

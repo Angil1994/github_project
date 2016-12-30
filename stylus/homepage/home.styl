@@ -55,11 +55,18 @@ ul.circle_box
   justify-content center
   position absolute
   bottom 12px
-  li
+  li.circle_btn
     float left
+    width 10px
+    height 10px
     padding 0 2px
+    background url("../../img/homepage/banner_icon_point_nor@2x.png") no-repeat
+    background-size 50%
     img
       width 7px
+  li.active
+    background url("../../img/homepage/banner_icon_point_press@2x.png") no-repeat
+    background-size 50%
 ul.carousel
   margin-left -0px
   width 400%
@@ -111,28 +118,33 @@ div.regions_hidden_box
   font-size 14px
   display none
   z-index 4
-  ul.regions
+  .regions
     width 50%
     float left
     background #f0f0f0
-    li
+    .reg
       box-sizing border-box
       padding 0 12px
       width 100%
       height 3em
       line-height 3em
-    li:hover
+    .reg.act
       background #fff
-  ul#regions_details
+  div#regions_details
       height 27em
       background #fff
+      position relative
+    div.reg
+      position absolute
+    .hide
+      display none
     p
       margin 0
       border-bottom #e1e1e1 1px solid
-      display none
     li:nth-child(1)
       color #ea5404
-
+.hide
+  display none
 
 
 section.details
