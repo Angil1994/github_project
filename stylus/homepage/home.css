@@ -171,6 +171,9 @@ div.regions_hidden_box div.reg {
 div.regions_hidden_box .hide {
   display: none;
 }
+div.regions_hidden_box #allreg {
+  display: block;
+}
 div.regions_hidden_box p {
   margin: 0;
   border-bottom: #e1e1e1 1px solid;

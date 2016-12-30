@@ -78,8 +78,10 @@ $("#menu_region").on("click",function(){
 	/*具体门店*/
 		$("#regions_towns li").on("click",function(){
 			var $townsli=$(this);
+			$("#regions_towns li" ).removeClass("act");
+			$(this ).addClass("act");
 			var index=$townsli.index();
-			$(".hide" ).hide();
+			$("#regions_details ul" ).hide();
 			$(".hide" ).eq(index ).show()
 		})
 
