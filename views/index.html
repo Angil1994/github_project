@@ -12,9 +12,7 @@
 	<link rel="stylesheet" href="./../public/css/loading.css">
 </head>
 <body>
-	名字:<input type="text" id="user"> <br>
-	密码:<input type="text" id="passwd"> <br>
-	<button id="send">登录</button>
+
 	<div class="logo"><img src="./../public/img/content_img_logo@2x.png"></div>
 	<div class="copy">Copyright<span>&copy;</span>2016</div>
 
@@ -22,35 +20,9 @@
 <script src="//cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
 <script>
 function remainTime(){
-
 	location.href="homepage/home.html";
 }
+setTimeout(remainTime,1500);
 
-$("#send" ).on("click",function(){
-	var username = $("#user" ).val();
-	var passwd = $("#passwd" ).val();
-
-	$.ajax({
-		url:'/api/user/login',
-		type:"POST",
-		dataType:'json',
-		data:{
-			username:username,
-			passwd:passwd
-		},
-		success:function(result){
-			console.log("result",result);
-			if(result.code==1){
-				alert("登陆成功");
-				setTimeout(remainTime,1500);
-			}else{
-				alert(result.msg)
-			}
-		},
-		/*complete:function(res){
-			console.log('res',res)
-		}*/
-	});
-});
 </script>
 </html>
