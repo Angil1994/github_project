@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>安居源-南京鸿鸣网络科技有限公司</title>
+	<meta name="keywords" content="南京鸿鸣网络科技有限公司">
+	<meta name="description" content="南京鸿鸣网络科技有限公司务涉及网站开发，手机APP开发，以及游戏开发运营等，
+	秉承“助力职场，成就梦想”的理念，致力于中国移动互联网研发人才一体化服务，全力打造移动互联网高端研发人才服务平台。
+	 集团目前拥有100多项专利产品，50多个APP项目，500家合作企业。">
+	<meta name="viewport" content="width=device-width,initial-scale=1,
+		maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="../../public/css/login/forget.css">
+</head>
+<body>
+	<header class="header">
+		<span class="icon_back" onclick="location.href='login.html'"><img src="../../public/img/login/nav_back_icon@2x.png" alt=""></span>
+		忘记密码
+		<span class="login" onclick="hrefToLogin()">登录</span>
+	</header>
+	<section>
+		<div>
+			<img src="../../public/img/login/content_ID_icon@2x.png">
+			账号:<input type="text" id="ID" placeholder="请输入手机号码">
+		</div>
+		<div class="line"></div>
+		<div>
+			<img src="../../public/img/login/content_verify_icon@2x.png">
+			验证码:<input type="password" placeholder="请输入验证码">
+			<button class="get_code" onclick="submitHandler(this)">获取验证码</button>
+		</div>
+		<div class="line"></div>
+		<div>
+			<img src="../../public/img/login/content_password_icon@2x.png">
+			密码:<input type="password" placeholder="请输入新的密码">
+		</div>
+		<div class="line"></div>
+		<div>
+			<img src="../../public/img/login/content_password_icon@2x.png">
+			密码:<input type="password" placeholder="请输入新的密码">
+		</div>
+	</section>
+	<button class="btn_sure">
+		确定
+	</button>
+</body>
+<script>
+function hrefToLogin(){
+	location.href="login.html"
+}
+
+var countdown=60;
+function submitHandler(obj){
+	var a=setTimeout(function(){
+		submitHandler(obj)
+	},1000);
+	if(countdown==0){
+		obj.removeAttribute("disabled");
+		obj.innerHTML="获取验证码";
+		countdown = 60;
+		clearTimeout(a)
+	}else{
+		obj.setAttribute("disabled",true);
+		obj.innerHTML="重新发送("+ countdown+")";
+		countdown--;
+	}
+}
+</script>
+</html>
